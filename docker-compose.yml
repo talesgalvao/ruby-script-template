@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  bash:
+    stdin_open: true
+    tty: true
+    volumes:
+        - .:/ruby-2.7.0
+    build:
+      context: .
+    command: 'bash'
